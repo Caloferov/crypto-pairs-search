@@ -6,7 +6,7 @@ import { fetchAndUpdateResults } from '../../api-helper'
 function Results({ searchInput }) {
     const [showResults, setShowResults] = useState(false);
     const [sortedBigFirst, setSortedBigFirst] = useState(false);
-    const [finalData, setFinalData] = useState([{}, {}, {}, {}]);
+    const [finalData, setFinalData] = useState([]);
 
     const handleSortByPrice = () => {
         if (sortedBigFirst) {
